@@ -1,0 +1,6 @@
+gcc -Wall -c hello_fn.c
+gcc -Wall -c bye_fn.c
+ar cr libhello.a hello_fn.o bye_fn.o
+gcc -Wall main.c libhello.a -o hello
+
+ar r libhello.a new_object.o (to append to existing library)
